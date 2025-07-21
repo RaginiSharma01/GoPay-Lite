@@ -1,0 +1,98 @@
+basePath: /api/v1
+definitions:
+  auth.AuthResponse:
+    properties:
+      message:
+        type: string
+      token:
+        type: string
+    type: object
+  auth.User:
+    properties:
+      email:
+        description: required for both
+        type: string
+      name:
+        description: for registration
+        type: string
+      password:
+        description: required for both
+        type: string
+    type: object
+host: localhost:8083
+info:
+  contact:
+    email: support@gopay-lite.com
+    name: API Support
+  description: Secure Authentication Service for GoPay-Lite
+  license:
+    name: MIT
+  title: GoPay-Lite Auth API
+  version: "1.0"
+paths:
+  /login:
+    post:
+      consumes:
+      - application/json
+      description: Login using email and password
+      parameters:
+      - description: User credentials
+        in: body
+        name: user
+        required: true
+        schema:
+          $ref: '#/definitions/auth.User'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/auth.AuthResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/auth.AuthResponse'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/auth.AuthResponse'
+      summary: Login a user
+      tags:
+      - auth
+  /register:
+    post:
+      consumes:
+      - application/json
+      description: Register using name, email, and password
+      parameters:
+      - description: User Info
+        in: body
+        name: user
+        required: true
+        schema:
+          $ref: '#/definitions/auth.User'
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Created
+          schema:
+            $ref: '#/definitions/auth.AuthResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/auth.AuthResponse'
+        "409":
+          description: Conflict
+          schema:
+            $ref: '#/definitions/auth.AuthResponse'
+      summary: Register a new user
+      tags:
+      - auth
+securityDefinitions:
+  BearerAuth:
+    in: header
+    name: Authorization
+    type: apiKey
+swagger: "2.0"

@@ -1,0 +1,30 @@
+# === Go binaries and build output ===
+*.exe
+*.out
+*.test
+*.log
+*.tmp
+bin/
+coverage.out
+
+# === Go modules (optional) ===
+vendor/
+
+# === Environment files ===
+.env
+
+# === IDE and OS files ===
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*.bak
+*.tmp
+.DS_Store
+Thumbs.db
+
+# === Docker artifacts ===
+*.pid
+*.tar
+docker-compose.override.yml
