@@ -114,9 +114,22 @@ POST	    /api/v1/pay	                Create Razorpay order
 <img width="1778" height="832" alt="ui3" src="https://github.com/user-attachments/assets/12619f3f-bb0d-4775-988b-38e5528f201a" />
 
 
+
+
+
+
 <img width="1826" height="793" alt="ui2" src="https://github.com/user-attachments/assets/ace173b9-a00b-44c4-a6b0-bce3d0d19402" />
 
+
+
+
+
+
 <img width="1873" height="801" alt="ui " src="https://github.com/user-attachments/assets/57518d03-a4a4-439f-9599-56c739f7c7b9" />
+
+
+
+
 
 <img width="1881" height="923" alt="ui5" src="https://github.com/user-attachments/assets/0db8ce63-ed5e-4886-92ca-75e698e40874" />
 
