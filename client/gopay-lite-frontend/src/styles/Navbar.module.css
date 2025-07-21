@@ -1,0 +1,47 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: var(--card-bg);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  color: var(--text);
+}
+
+.logo a {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--accent);
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.links a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.links a:hover {
+  color: var(--accent);
+}
+
+.themeToggle {
+  background-color: var(--button);
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.themeToggle:hover {
+  background-color: var(--button-hover);
+}

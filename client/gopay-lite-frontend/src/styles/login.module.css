@@ -1,0 +1,95 @@
+.loginContainer {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #2d3748;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.label {
+  font-size: 0.875rem;
+  color: #4a5568;
+}
+
+.input {
+  padding: 0.75rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #4299e1;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.2);
+}
+
+.primaryButton {
+  background-color: #4299e1;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.primaryButton:hover {
+  background-color: #3182ce;
+}
+
+.primaryButton:disabled {
+  background-color: #a0aec0;
+  cursor: not-allowed;
+}
+
+.message {
+  padding: 0.75rem;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.error {
+  background-color: #fff5f5;
+  color: #e53e3e;
+}
+
+.success {
+  background-color: #f0fff4;
+  color: #38a169;
+}
+
+.secondaryActions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.link {
+  color: #4299e1;
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
