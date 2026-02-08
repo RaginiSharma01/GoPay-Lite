@@ -67,7 +67,7 @@ func main() {
 
 	// Middlewares
 	r.Use(loggingMiddleware)
-	r.Use(corsMiddleware) // 👈 NEW: Add CORS middleware here
+	r.Use(corsMiddleware) 
 	r.Use(middleware.ContentTypeJSON)
 
 	// Swagger docs
